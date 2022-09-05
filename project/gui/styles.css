@@ -1,1 +1,218 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: purple;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+/*  StartUp Button*/
+#startUpButton {
+  top: 0px;
+  left: 0px;
+}
+
+
+/* Draggable div id */
+#mydiv {
+  z-index: 2;
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  min-height: 75px;
+  min-width: 205px;
+/*   border: 1px solid red; */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  resize: both;
+
+/*   transition: width .25s, height .25s, opacity; */
+}
+
+
+#mydivheader {
+    display: flex;
+    position: absolute;
+    z-index:2;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+    width: calc(100% - 18px);
+/*      border: 1px solid red; */
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    padding: 5px;
+  
+}
+
+#control {
+  display: flex;
+  gap: 2px;
+  height: 32px;
+/*   border: 1px solid red; */
+  
+  
+}
+
+#min {
+    background-color: Transparent;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    background-image: url('https://cdn.glitch.global/2ada566c-f450-4a14-880e-2e6947bd86db/Window_control_icons_mini.png?v=1658683340573');
+    background-size: cover;
+    image-rendering: pixelated;
+    width: 32px;
+    height: 32px;
+}
+#min:hover {
+  filter: brightness(120%);
+}
+
+#max {
+    background-color: Transparent;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    background-image: url('https://cdn.glitch.global/2ada566c-f450-4a14-880e-2e6947bd86db/Window_control_icons_max.png?v=1658683327463');
+    background-size: cover;
+    image-rendering: pixelated;
+    width: 32px;
+    height: 32px;
+}
+#max:hover {
+  filter: brightness(120%);
+}
+#close {
+    background-color: Transparent;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    background-image: url('https://cdn.glitch.global/2ada566c-f450-4a14-880e-2e6947bd86db/Window_control_icons.png?v=1658580877203');
+    background-size: cover;
+    image-rendering: pixelated;
+    width: 32px;
+    height: 32px;
+}
+#close:hover {
+  filter: brightness(120%);
+}
+
+/* Class containers */
+
+.GUI-center {
+  margin-left: 25%;
+  margin-top: 0%;
+  height: 140px;
+  width: 140px;
+}
+
+/* .container {
+  z-index: 2;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+
+.container-top {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  border: 21px solid transparent;
+  border-image: url('https://cdn.glitch.global/2ada566c-f450-4a14-880e-2e6947bd86db/windowTitleBar2.png?v=1658458791597');
+  border-image-repeat: repeat;
+  border-image-slice: 7 7 7 7 fill;
+  border-image-outset: 0px 0px 0px 0px;
+  image-rendering: pixelated;
+}
+.container-bottom {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 40px);
+  top: 40px;
+  border: 18px solid transparent;
+  border-image: url('https://cdn.glitch.global/2ada566c-f450-4a14-880e-2e6947bd86db/WindowBody.png?v=1658417191884');
+  border-image-repeat: repeat;
+  border-image-slice: 0 6 6 6 fill;
+  border-image-outset: 0px 0px 0px 0px;
+  image-rendering: pixelated;
+}
+.container-bottom-content {
+  
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+/*   border: 1px solid red; */
+}
+/* .container-top-bar {
+    position: absolute;
+    z-index: 3;
+    height: 15%;
+    width: 94%;
+    border: 1px solid red;
+    top: 4%;  
+    left: 3%;
+    color: white;
+}
+ */
+
+.container-top-bar-title {
+/*   position: absolute; */
+/*   top: -30%;  
+  padding: 5px; */
+}
+.container-top-bar-close {
+/*     cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    right: 10px;
+    background-image: url('https://cdn.glitch.global/2ada566c-f450-4a14-880e-2e6947bd86db/Window_control_icons.png?v=1658580877203');
+    background-size: cover;
+    image-rendering: pixelated;
+    width: 32px;
+    height: 32px;
+    padding-left: 2px;
+    padding-top: 2px; */
+}
+/* .container-top-bar-max {
+
+}
+.container-top-bar-min {
+
+} */
+
 

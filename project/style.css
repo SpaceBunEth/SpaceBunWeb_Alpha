@@ -1,1 +1,356 @@
+/*SpaceBun stylesheet Index*/
+/*UwU*/
+
+html{
+  font-size: 15px;
+  font-family: 'Press Start 2P', cursive;
+  color: #541295;
+}
+
+body {
+  min-width: 1130px;
+    background-image: url("https://cdn.glitch.global/4af42fd0-ff06-41b1-99cc-f336bfa6e7d9/Website_Background.png?v=1659977176925");
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+header{
+  min-width: 1130px;
+}
+
+nav {
+  margin: 20px;
+  margin-top: 50px;
+  
+/*   padding: 20px;
+  font-size: 1em; */
+
+}
+
+main{
+  
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 180px;
+  margin-right: 180px;
+  padding: 20px;
+}
+
+footer{
+  min-width: 1000px;
+  margin: 20px;
+  padding: 0;
+}
+
+
+
+/* .center {
+  margin-left: 25%;
+  margin-top: 0%;
+  height: 140px;
+  width: 140px;
+} */
+
+
+#logo-img{
+  height: 200px;
+/*   width: 200px; */
+  top: 0px;
+  position: absolute;
+  float:left;
+  z-index: 1;
+  left: 0px
+}
+#help-img{
+  position: absolute;
+}
+
+/* .nav-border-style{
+  height: 100px;
+  border-style: solid;
+  border-width: 20px;
+  border-image: url(https://cdn.glitch.global/4af42fd0-ff06-41b1-99cc-f336bfa6e7d9/border1.png?v=1657074209430) 33% repeat;
+  background-color: #f8eeff;
+  border-radius: 30px;
+}
+
+.nav-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f8eeff;
+} */
+
+.nav-flex-container-style {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  border-style: solid;
+  border-width: 20px;
+  border-image: url(https://cdn.glitch.global/4af42fd0-ff06-41b1-99cc-f336bfa6e7d9/border1.png?v=1657074209430) 33% repeat;
+  background-color: #f8eeff;
+  border-radius: 30px;
+}
+
+.nav-button {
+  display: block;
+  height: 54px;
+  width: 100px;
+  background: url(https://cdn.glitch.global/4af42fd0-ff06-41b1-99cc-f336bfa6e7d9/button_small.png?v=1657075236608) no-repeat; 
+  background-size: 100%;
+  cursor: pointer;
+  font-size: .9em;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  color: #541295;
+}
+
+.main-border-style{
+  border-style: solid;
+  border-width: 30px;
+  border-image: url(https://cdn.glitch.global/4af42fd0-ff06-41b1-99cc-f336bfa6e7d9/border1.png?v=1657074209430) 33% repeat;
+  background-color: #f8eeff;
+  border-radius: 30px;
+}
+
+.footer-border-style{
+  border-style: solid;
+  border-width: 20px;
+  border-image: url(https://cdn.glitch.global/4af42fd0-ff06-41b1-99cc-f336bfa6e7d9/border1.png?v=1657074209430) 33% repeat;
+  background-color: #f8eeff;
+  border-radius: 30px;
+}
+
+
+
+/* Mapping out items on Main-grad index page  */
+
+.item1 { grid-area:header;}
+.item2 { grid-area:profile;}
+.item3 { grid-area: qa;}
+.item4 { grid-area: title;}
+.item5 { grid-area: intro;}
+.item6 { grid-area: box;}
+.item7 { grid-area: sum;}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, auto);
+/*  A 6 by 7 row and column grid, pre-defined class "items" mapped out using grid-template-areas : location main tag  */
+  grid-template-areas:
+    ". heaer header header header ."
+    ". profile profile qa qa qa"
+    ". . title title . ."
+    "intro intro intro intro intro intro"
+    "box box box box box box"
+    "sum sum sum sum sum sum"
+  
+}
+
+.item2 img {
+  width: 200px;
+  height: 300px;
+}
+.item3 ul li{
+  font-size: 20px;
+}
+
+
+.footer-grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 4fr 70px 70px 70px 70px;
+  gap: 5px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center; 
+  
+}
+/* .footer-grid-item-1 {
+  display: grid;
+  
+} */
+
+
+#footer-button-twitter {
+/*     width: 100%;
+    height: 100%;
+    background-image: url("https://cdn.glitch.global/4af42fd0-ff06-41b1-99cc-f336bfa6e7d9/social_media_button_twitter.png?v=1657124098028");
+    background-size: 30px 30px;
+    image-rendering: pixelated;
+    background-size: 100%; */
+      
+    background-color: Transparent;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    background-image: url('https://cdn.glitch.global/4af42fd0-ff06-41b1-99cc-f336bfa6e7d9/social_media_button_twitter.png?v=1657124098028');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    image-rendering: pixelated;
+    width: 100%;
+    height: 100%;
+  
+  
+}
+#footer-button-opensea {
+
+    background-color: Transparent;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    background-image: url('https://cdn.glitch.global/4af42fd0-ff06-41b1-99cc-f336bfa6e7d9/social_media_button_opensea.png?v=1657124067037');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    image-rendering: pixelated;
+    width: 100%;
+    height: 100%;
+}
+#footer-button-discord {
+
+    background-color: Transparent;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    background-image: url('https://cdn.glitch.global/4af42fd0-ff06-41b1-99cc-f336bfa6e7d9/social_media_button_discord.png?v=1657124051270');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    image-rendering: pixelated;
+    width: 100%;
+    height: 100%;
+}
+#footer-button-youtube {
+  
+    background-color: Transparent;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    background-image: url('https://cdn.glitch.global/4af42fd0-ff06-41b1-99cc-f336bfa6e7d9/social_media_button_youtube.png?v=1657124111109');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    image-rendering: pixelated;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* CryptoCurrency Price API Styles CSS */
+/*Flex container item6 will not wrap do to min-width being placed on nav,main, and footer containers (css)  */
+.flex-container-item6 {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+/* Main Container for API, container-value */
+.container-value { 
+  color: white;
+  width: 200px;
+  min-width: 200px;
+  height: 300px;
+  border: 10px solid transparent;
+  border-image: url('https://cdn.glitch.global/7763dee8-1382-44a0-bfcb-91c3a7e8377e/pixelboy.png?v=1659975471962') 16 round;
+  position: relative;
+  
+  
+}
+
+.top {
+  background-image:linear-gradient(rgba(200, 200, 255, 0.35), rgba(255, 255, 255, 0.1)), url(https://cdn.glitch.global/7763dee8-1382-44a0-bfcb-91c3a7e8377e/Website_Background.png?v=1659974624735);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  
+}
+.body {
+  background-image: linear-gradient(rgba(255, 200, 255, 0.3), rgba(255, 255, 200, 0.2)), url(https://cdn.glitch.global/7763dee8-1382-44a0-bfcb-91c3a7e8377e/Website_Background.png?v=1659974624735);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50px;
+}
+
+.bottom {
+  background-image:linear-gradient(rgba(200, 200, 255, 0.35), rgba(255, 255, 255, 0.1)), url(https://cdn.glitch.global/7763dee8-1382-44a0-bfcb-91c3a7e8377e/Website_Background.png?v=1659974624735);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  top: 250px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Data from API, USD Value of Crypto */
+.value {
+  font-size: 22px;
+  color: Chartreuse;
+}
+
+/* Button styles for API Container */
+#myButton, #myButton2, #myButton3 {
+  cursor: pointer;
+  background-color: #311662;
+  color: white;
+  border: 2px solid #dec3d5;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+#myButton:hover, #myButton2:hover, #myButton3:hover {
+  background-color: pink;
+}
+
+#myButton:active, #myButton2:active, #myButton3:active {
+  background-color: #f8eeff;
+}
+
+/* Wiki Link Styles API Container */
+
+.a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
 
